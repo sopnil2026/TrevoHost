@@ -226,3 +226,39 @@ h1 { max-width: 560px; margin: 0; font-size: clamp(43px, 5.05vw, 64px); font-wei
   .chip-deploy { left: -4px; }.chip-online { right: -5px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+
+
+/* Official TrevoHost logo asset */
+.brand-mark {
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(56, 255, 127, .72);
+  border-radius: 50%;
+  background: #020a06;
+  box-shadow: 0 0 12px rgba(45, 255, 110, .28);
+}
+.brand-mark img {
+  display: block;
+  width: 54px;
+  max-width: none;
+  height: auto;
+  flex: 0 0 auto;
+  transform: translateX(-7px);
+}
+.hero-logo {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: min(100%, 363px);
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  filter: drop-shadow(0 0 22px rgba(35, 255, 111, .2));
+}
+@media (max-width: 680px) {
+  .hero-logo {
+    width: min(100%, 363px);
+    border-radius: 13px;
+  }
+}
